@@ -11,19 +11,19 @@
 
 本教程使用[caffe-ssd-microsoft](https://github.com/conner99/caffe)版本，进入github(https://github.com/conner99/caffe)并选择ssd-microsoft分支，下载并解压。
 
-![1550998453972](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1550998453972.png)
+![1550998453972](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1550998453972.png)
 
 #### 2.2 配置CommonSettings.props
 
 进入caffe-ssd-microsoft\windows文件夹，找到CommonSettings.props.example文件，然后复制一份并更改文件名为CommonSettings.props
 
-![1550998766139](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1550998766139.png)
+![1550998766139](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1550998766139.png)
 
 打开CommonSettings.props文件，根据需求更改相应配置。
 
-![1550998881106](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1550998881106.png)
+![1550998881106](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1550998881106.png)
 
-![1550999031749](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1550999031749.png)
+![1550999031749](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1550999031749.png)
 
 #### 2.3 注释掉含有regex或者rv的代码
 
@@ -98,25 +98,25 @@ write_json(ss, output);
 
 打开Caffe.sln文件，配置thirdparty依赖库的[包含目录]、[库目录]、[附加依赖项]；
 
-![1551000599275](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1551000599275.png)
+![1551000599275](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1551000599275.png)
 
-![1551000624473](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1551000624473.png)
+![1551000624473](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1551000624473.png)
 
 #### 2.6 取消官方NuGet库下载
 
 点击[项目]—>[管理NuGet程序包]—>[设置]—>[NuGet包管理器]—>[允许NuGet下载缺少的程序包]
 
-![1551001069471](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1551001069471.png)
+![1551001069471](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1551001069471.png)
 
-![1551001091014](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1551001091014.png)
+![1551001091014](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1551001091014.png)
 
-![1551001117711](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1551001117711.png)
+![1551001117711](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1551001117711.png)
 
 #### 2.7 C/C++ –> 常规 里的将警告提示为错误修改 为 **否**
 
 将C/C++ –> 常规 里的[将警告提示为错误]修改 为 **否**
 
-![1551001506284](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img\1551001506284.png)
+![1551001506284](https://github.com/Zdafeng/caffe-ssd-microsoft-vs2015/tree/master/img/1551001506284.png)
 
 #### 2.8 删除官方NugetPackages配置
 
